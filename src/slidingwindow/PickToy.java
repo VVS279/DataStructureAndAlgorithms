@@ -2,6 +2,7 @@ package slidingwindow;
 
 import java.util.HashMap;
 
+
 // Variable Size Sliding Window
 public class PickToy {
 
@@ -25,7 +26,6 @@ public class PickToy {
       if (map.size() <= 2) {
         int sum = map.values().stream().mapToInt(e -> e).sum();
         if (max < sum) {
-          System.out.println(map);
           max = sum;
         }
       } else {
@@ -38,7 +38,6 @@ public class PickToy {
         }
         i++;
       }
-      
       j++;
     }
     System.out.println(max);
